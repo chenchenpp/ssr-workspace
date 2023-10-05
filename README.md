@@ -3,4 +3,6 @@
 * 局部安装依赖 --filter
   `pnpm add axios --filter hello-world`
 * 子工程相互依赖: 表示把hello-world放到use-hello-world的依赖里
-   `pnpm add hello-world --filter use-hello-world`
+  `pnpm add hello-world --filter use-hello-world`
+* 子工程安装依赖
+  `pnpm install --filter '{packages/hello-world}'`
