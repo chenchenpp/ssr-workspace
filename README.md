@@ -6,3 +6,5 @@
   `pnpm add hello-world --filter use-hello-world`
 * 子工程安装依赖
   `pnpm install --filter '{packages/hello-world}'`
+* 启动子工程命令
+  `pnpm --filter '{packages/next-framer}' dev`
