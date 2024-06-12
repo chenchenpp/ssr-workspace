@@ -2,6 +2,12 @@
 const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
+  compilerOptions: {
+    "baseUrl": '.',
+    "paths": {
+      "@/components/*": ["components/*"]
+    }
+  }
 }
 
 module.exports = nextConfig

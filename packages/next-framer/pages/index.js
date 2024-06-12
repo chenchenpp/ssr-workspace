@@ -8,20 +8,29 @@ import Footer from '../components/Footer';
 import Copyright from '../components/Copyright';
 
 // import data
-
-const Home = () => {
+import * as data from '../data.json'
+const {headerData, heroData, navData, faqData, aboutData, howData, testimonialData, footerData} = data
+const Home = ({headerData, heroData, navData, faqData, aboutData, howData, testimonialData, footerData}) => {
   return (
     <div className='overflow-hidden max-w-[1600px] mx-auto bg-page'>
-      <Hero />
-      <About />
-      <How />
-      <Faq />
-      <Testimonials />
-      <Footer />
+      <Hero heroData={heroData} headerData={headerData} navData={navData}/>
+      <About aboutData={aboutData}/>
+      <How howData={howData}/>
+      <Faq faqData={faqData}/>
+      <Testimonials testimonialData={testimonialData}/>
+      <Footer footerData={footerData}/>
       <Copyright />
+      <div className='h-[2000px]'></div>
     </div>
   );
 };
 
 // get data.json
+export function getStaticProps() {
+  return {
+    props: {
+      headerData, heroData, navData, faqData, aboutData, howData, testimonialData, footerData
+    }
+  }
+}
 export default Home;
