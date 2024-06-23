@@ -1,5 +1,6 @@
 <template>
-  <div>
+  <PageLayout name="首页">
+    <HomeHeader></HomeHeader>
     <h2>home</h2>
     <ul>
       <li class="w-[20px]">
@@ -15,14 +16,14 @@
     <div class="btn w-3 h-10"></div>
     <a class="btn" href="/about">a标签about</a>
     <van-button type="primary">主要按钮</van-button>
-
-  </div>
+  </PageLayout>
 </template>
 
 <script setup lang="ts">
 import { useCommonStore } from "../store/common";
 import { rsCode } from "../config/constants";
 const commonStore = useCommonStore();
+
 onMounted(() => {
   getEnums();
 });
@@ -37,7 +38,6 @@ function getEnums() {
   commonStore.setEnums(data.value?.body || {});
   console.log(data, commonStore.enums, 1111);
 }
-
 </script>
 
 <style scoped></style>
