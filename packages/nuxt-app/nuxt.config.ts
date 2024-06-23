@@ -19,7 +19,7 @@ export default defineNuxtConfig({
   },
   devtools: { enabled: true },
   // css: ['~/assets/css/main.css'],
-  modules: ["@nuxtjs/tailwindcss", "@pinia/nuxt"],
+  modules: ["@vant/nuxt", "@nuxtjs/tailwindcss", "@pinia/nuxt"],
   postcss: {
     plugins: {
       tailwindcss: join(__dirname, 'tailwind.config.js'),

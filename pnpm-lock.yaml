@@ -6,19 +6,23 @@ importers:
     specifiers:
       '@nuxtjs/tailwindcss': ^6.12.0
       '@pinia/nuxt': ^0.5.1
+      '@vant/nuxt': ^1.0.4
       nuxt: ^3.12.1
       postcss: ^8.4.16
       postcss-px-to-viewport: ^1.1.1
       postcss-pxtorem: ^6.1.0
+      vant: ^4.9.1
       vue: ^3.4.27
       vue-router: ^4.3.3
     dependencies:
       '@nuxtjs/tailwindcss': registry.npmmirror.com/@nuxtjs/tailwindcss/6.12.0
       '@pinia/nuxt': registry.npmmirror.com/@pinia/nuxt/0.5.1_vue@3.4.29
+      '@vant/nuxt': registry.npmmirror.com/@vant/nuxt/1.0.4_vant@4.9.1
       nuxt: registry.npmmirror.com/nuxt/3.12.2
       postcss: registry.npmmirror.com/postcss/8.4.38
       postcss-px-to-viewport: registry.npmmirror.com/postcss-px-to-viewport/1.1.1
       postcss-pxtorem: registry.npmmirror.com/postcss-pxtorem/6.1.0_postcss@8.4.38
+      vant: registry.npmmirror.com/vant/4.9.1_vue@3.4.29
       vue: registry.npmmirror.com/vue/3.4.29
       vue-router: registry.npmmirror.com/vue-router/4.3.3_vue@3.4.29
 
@@ -2543,6 +2547,41 @@ packages:
       '@unhead/shared': registry.npmmirror.com/@unhead/shared/1.9.13
       hookable: registry.npmmirror.com/hookable/5.5.3
       unhead: registry.npmmirror.com/unhead/1.9.13
+      vue: registry.npmmirror.com/vue/3.4.29
+    dev: false
+
+  registry.npmmirror.com/@vant/nuxt/1.0.4_vant@4.9.1:
+    resolution: {integrity: sha512-NvOndQyk7Y/pSCpNHtqkwv9g60YCj9IxF89aA2InFSKu+9lv2t828yO3XjNJyryabgaFsfz7z1322X4v0uPPUg==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@vant/nuxt/-/nuxt-1.0.4.tgz}
+    id: registry.npmmirror.com/@vant/nuxt/1.0.4
+    name: '@vant/nuxt'
+    version: 1.0.4
+    peerDependencies:
+      vant: '>=4'
+    dependencies:
+      '@nuxt/kit': registry.npmmirror.com/@nuxt/kit/3.12.2
+      magic-string: registry.npmmirror.com/magic-string/0.29.0
+      unplugin: registry.npmmirror.com/unplugin/1.10.1
+      vant: registry.npmmirror.com/vant/4.9.1_vue@3.4.29
+    transitivePeerDependencies:
+      - magicast
+      - rollup
+      - supports-color
+    dev: false
+
+  registry.npmmirror.com/@vant/popperjs/1.3.0:
+    resolution: {integrity: sha512-hB+czUG+aHtjhaEmCJDuXOep0YTZjdlRR+4MSmIFnkCQIxJaXLQdSsR90XWvAI2yvKUI7TCGqR8pQg2RtvkMHw==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@vant/popperjs/-/popperjs-1.3.0.tgz}
+    name: '@vant/popperjs'
+    version: 1.3.0
+    dev: false
+
+  registry.npmmirror.com/@vant/use/1.6.0_vue@3.4.29:
+    resolution: {integrity: sha512-PHHxeAASgiOpSmMjceweIrv2AxDZIkWXyaczksMoWvKV2YAYEhoizRuk/xFnKF+emUIi46TsQ+rvlm/t2BBCfA==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@vant/use/-/use-1.6.0.tgz}
+    id: registry.npmmirror.com/@vant/use/1.6.0
+    name: '@vant/use'
+    version: 1.6.0
+    peerDependencies:
+      vue: ^3.0.0
+    dependencies:
       vue: registry.npmmirror.com/vue/3.4.29
     dev: false
 
@@ -5737,6 +5776,15 @@ packages:
       magic-string: registry.npmmirror.com/magic-string/0.30.10
     dev: false
 
+  registry.npmmirror.com/magic-string/0.29.0:
+    resolution: {integrity: sha512-WcfidHrDjMY+eLjlU+8OvwREqHwpgCeKVBUpQ3OhYYuvfaYCUgcbuBzappNzZvg/v8onU3oQj+BYpkOJe9Iw4Q==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/magic-string/-/magic-string-0.29.0.tgz}
+    name: magic-string
+    version: 0.29.0
+    engines: {node: '>=12'}
+    dependencies:
+      '@jridgewell/sourcemap-codec': registry.npmmirror.com/@jridgewell/sourcemap-codec/1.4.15
+    dev: false
+
   registry.npmmirror.com/magic-string/0.30.10:
     resolution: {integrity: sha512-iIRwTIf0QKV3UAnYK4PU8uiEc4SRh5jX0mwpIwETPpHdhVM4f53RSwS/vXvN1JhGX+Cs7B8qIq3d6AH49O5fAQ==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/magic-string/-/magic-string-0.30.10.tgz}
     name: magic-string
@@ -8894,6 +8942,20 @@ packages:
     name: validate-npm-package-name
     version: 5.0.1
     engines: {node: ^14.17.0 || ^16.13.0 || >=18.0.0}
+    dev: false
+
+  registry.npmmirror.com/vant/4.9.1_vue@3.4.29:
+    resolution: {integrity: sha512-p7iAKJyACYVwrmrkf3COmbuvzjHrFJ+FAmlyOWbxTS2ovkRs+tNKYjX2iibAl4XnHXBQD+qpX0ogUqE3jE7Isg==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/vant/-/vant-4.9.1.tgz}
+    id: registry.npmmirror.com/vant/4.9.1
+    name: vant
+    version: 4.9.1
+    peerDependencies:
+      vue: ^3.0.0
+    dependencies:
+      '@vant/popperjs': registry.npmmirror.com/@vant/popperjs/1.3.0
+      '@vant/use': registry.npmmirror.com/@vant/use/1.6.0_vue@3.4.29
+      '@vue/shared': registry.npmmirror.com/@vue/shared/3.4.29
+      vue: registry.npmmirror.com/vue/3.4.29
     dev: false
 
   registry.npmmirror.com/vary/1.1.2:

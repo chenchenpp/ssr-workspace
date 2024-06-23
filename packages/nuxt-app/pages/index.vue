@@ -14,6 +14,8 @@
     </ul>
     <div class="btn w-3 h-10"></div>
     <a class="btn" href="/about">a标签about</a>
+    <van-button type="primary">主要按钮</van-button>
+
   </div>
 </template>
 
