@@ -3,14 +3,17 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "build": "nuxt build",
     "dev": "nuxt dev",
+    "build:beta": "nuxt build",
+    "build:preview": "nuxt build --dotenv .env.preview",
+    "build:online": "nuxt build --dotenv .env.online",
+    "preview": "nuxt preview --dotenv .env.preview",
     "generate": "nuxt generate",
-    "preview": "nuxt preview",
     "postinstall": "nuxt prepare"
   },
   "dependencies": {
     "@nuxtjs/tailwindcss": "^6.12.0",
+    "@pinia/nuxt": "^0.5.1",
     "nuxt": "^3.12.1",
     "postcss": "^8.4.16",
     "postcss-px-to-viewport": "^1.1.1",

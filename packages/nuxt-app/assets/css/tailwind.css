@@ -1,0 +1,15 @@
+@tailwind base;
+
+@tailwind components;
+
+@tailwind utilities;
+
+body {
+  @apply bg-gray-200;
+}
+/* @layer可以修改默认配置样式 */
+@layer components {
+  .btn{
+    @apply bg-red-500 text-white px-4 py-2 rounded w-[100px];
+  }
+}

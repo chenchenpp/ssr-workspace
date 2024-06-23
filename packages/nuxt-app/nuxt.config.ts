@@ -2,6 +2,11 @@ import { join } from 'path'
 
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
+  runtimeConfig: {
+    public:{
+      apiBase: process.env.NUXT_PUBLIC_API_BASE
+    }
+  },
   app:{
     head: {
       titleTemplate: '个人档案',
@@ -10,11 +15,11 @@ export default defineNuxtConfig({
         { name: 'viewport', content: 'width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' },
         { hid: 'description', name: 'description', content: '模拟钉钉端的个人档案' },
       ]
-    }
+    },
   },
   devtools: { enabled: true },
   // css: ['~/assets/css/main.css'],
-  modules: ["@nuxtjs/tailwindcss"],
+  modules: ["@nuxtjs/tailwindcss", "@pinia/nuxt"],
   postcss: {
     plugins: {
       tailwindcss: join(__dirname, 'tailwind.config.js'),

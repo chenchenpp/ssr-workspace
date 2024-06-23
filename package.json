@@ -5,7 +5,11 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "nuxt:dev": "pnpm --filter nuxt-app dev"
+    "nuxt:dev": "pnpm --filter nuxt-app dev",
+    "nuxt:beta": "pnpm --filter nuxt-app build:beta",
+    "nuxt:preview": "pnpm --filter nuxt-app build:preview",
+    "nuxt:online": "pnpm --filter nuxt-app build:online",
+    "nuxt:test": "pnpm --filter nuxt-app preview"
   },
   "keywords": [],
   "author": "",
