@@ -1,0 +1,5 @@
+:root:root {
+    --van-text-color: #171A1D;
+    --van-cell-text-color: rgba(23,26,29,0.6);
+    --van-cell-vertical-padding: 30px;
+}
